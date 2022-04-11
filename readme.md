@@ -6,7 +6,7 @@ That is 2-3 minutes for each slide. You should have 3-4 for team memeber for a t
 * Team 
     * Arran 
     * Finnian
-    * Ali
+    * Aly
 
 * We are a consulting company. 
 * Our target audience is the CEO and CTO. What's important for them?

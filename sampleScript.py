@@ -3,8 +3,8 @@ import pandas as pd
 # This script must be run first to create the sample dataset that main.py can then use.
 
 # The range of data that is selected
-indexSelectionFare = 7500
-indexSelectionTrip = 7500
+indexSelectionFare = 15000
+indexSelectionTrip = 15000
 # Reads the raw data and then takes a selection of this data and then saves this to
 # the sample data file. These files are then read by main.py
 try:

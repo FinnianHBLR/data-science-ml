@@ -14,6 +14,12 @@ def calcAverage(statement, amount, rounder, unit):
     print(f"{statement} {round(average, rounder)} {unit}")
 
 
+def calcProbability(y, z, message):
+    print(y,z)
+    prob = y / z
+    print(f'{message}{round(prob, 3)}')
+
+
 # Trips Above 50km
 distanceAbove50 = tripData.loc[tripData.trip_distance >= 50]
 # Merge the medallion so I can access financial data
@@ -40,12 +46,16 @@ distanceAbove30.to_csv("./data/dataOutput/tripsAbove30.csv")
 totalAmountDataFrame = fareData[' total_amount']
 distanceOfTrip = tripData['trip_distance']
 distanceBelow30Cost = distanceBelow30[' total_amount']
+distanceAbove30Cost = distanceAbove30[' total_amount']
 distanceBelow50kmCost = distanceBelow50km[' total_amount']
 
 calcAverage('Average cost for ALL trip $', totalAmountDataFrame, 3, 'USD')
 calcAverage('Average distance for ALL trip', distanceOfTrip, 3, 'km')
 calcAverage('Average cost for trips below 30 km: $', distanceBelow30Cost, 3, 'USD')
 calcAverage('Average cost for trips below 50 km: $', distanceBelow50kmCost, 3, 'USD')
+calcAverage('Average cost for trips Above 30 km: $', distanceAbove30Cost, 3, 'USD')
+calcProbability(len(distanceAbove30), len(tripData), 'Probability of trip being above 30km: %')
+calcProbability(len(distanceBelow30), len(tripData), 'Probability of trip being below 30km: %')
 
 # scatter plot for distance and money earned
 plt.figure(figsize=(6, 6))

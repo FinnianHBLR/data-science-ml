@@ -1,3 +1,5 @@
+from os import times_result
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -15,10 +17,16 @@ def calcAverage(statement, amount, rounder, unit):
 
 
 def calcProbability(y, z, message, rounder):
-    print(y,z)
+    print(y, z)
     prob = y / z
     print(f'{message}{round(prob, rounder)}')
 
+
+# Zero km trips (may contain outliers)
+distance0 = tripData.loc[tripData.trip_distance == 0]
+tripData.drop(distance0.index, axis=0, inplace=True)
+fareData.drop(distance0.index, axis=0, inplace=True)
+distance0.to_csv("./data/dataOutput/trips0.csv")
 
 # Trips Above 50km
 distanceAbove50 = tripData.loc[tripData.trip_distance >= 50]

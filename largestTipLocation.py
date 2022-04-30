@@ -29,8 +29,9 @@ def calculateHighestTiploc():
     normalisedData = pd.DataFrame(x_scaled)
 
     # Using this for scale.
-    ax.scatter(concatenated['pickup_longitude'], concatenated['pickup_latitude'], s=(normalisedData*20), c=(normalisedData*255), cmap='tab20')
+    ax.scatter(concatenated['pickup_longitude'], concatenated['pickup_latitude'], s=(normalisedData*300), c=(normalisedData*255), cmap='tab20')
 
+    ax.set_title("Tip amount, blue (low), light blue (med), orange(med), green (high), red(high).")
     ax.set_ylim(map_box[2], map_box[3])
     ax.set_xlim(map_box[0], map_box[1])
     ax.imshow(map_img, extent=map_box, alpha=0.9)

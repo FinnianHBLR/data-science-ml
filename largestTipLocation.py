@@ -29,7 +29,7 @@ def calculateHighestTiploc():
     normalisedData = pd.DataFrame(x_scaled)
 
     # Using this for scale.
-    ax.scatter(concatenated['pickup_longitude'], concatenated['pickup_latitude'], s=20, c=(normalisedData*255), cmap='tab20')
+    ax.scatter(concatenated['pickup_longitude'], concatenated['pickup_latitude'], s=(normalisedData*20), c=(normalisedData*255), cmap='tab20')
 
     ax.set_ylim(map_box[2], map_box[3])
     ax.set_xlim(map_box[0], map_box[1])

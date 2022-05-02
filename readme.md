@@ -38,7 +38,7 @@ One question T3-T8.
 trip distance. (Histogram?)  
 
 One we can choose
-* 4. Do cool lasers improve taxi performance.
+* 4. Where are higher tips?
 
 Questions you should consider!
 * Which E-taxi type should be used? One that needs a

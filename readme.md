@@ -1,5 +1,19 @@
-# Main points
-You have **6.6** mins to showcase what you have.
+## Description
+
+This is a data analysis project with Taxi data from New York. This was worked on with 3 great team members from around the globe!  
+*Presented for Furtwangen University - Germany*
+
+### Main Libraries
+* Numpy
+* Pandas
+* Scipy
+* Sklearn
+* Cartopy
+* Urllib
+* PIL
+
+## Main points
+There is **6.6** minutes to showcase what we have.
 
 That is 2-3 minutes for each slide. You should have 3-4 for team memeber for a total of 20 minutes.
 
@@ -11,14 +25,13 @@ That is 2-3 minutes for each slide. You should have 3-4 for team memeber for a t
 * We are a consulting company. 
 * Our target audience is the CEO and CTO. What's important for them?
 
-* Core stuff
+* Core points
     * Timing 
     * Completnes of results
     * Reflection
         * What value can we derive
         * Why was the analysis done in this particular way?
         * Is the presentation easy to comprened
-        * 
 
 ## Our advising scenario (Taxi)  
 We're going to go with:

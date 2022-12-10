@@ -2,7 +2,7 @@
 
 This is a data analysis project with Taxi data from New York. This was worked on with 3 great team members from around the globe!  
 *Presented for Furtwangen University - Germany*
-
+> **Presentation PDF located ![here!](https://github.com/FinnianHBLR/data-science-ml/blob/ed786238588e1bdc709e04e5d09695a3c4ecbaed/Data%20Science%20Presentation%20upload.pdf)**
 ### Main Libraries
 * Numpy
 * Pandas
